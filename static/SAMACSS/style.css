@@ -1,0 +1,38 @@
+.nav-link{
+    font-size: 22px;
+}
+i:hover{
+    color:mediumblue; 
+}
+
+.foot{
+    background-color:black;
+    font-size: 22px;
+    color: white;
+    /* text-align: center; */
+    padding: 35px;
+}
+.spa{
+    font-size: 22px;
+    color: darkorange;
+}
+.jf{
+   background-color:  #C0C0C0;
+}
+.jumbotron{
+    padding: 15px 15px;
+}
+.fa-7x{
+    /* background-color: gray;
+    border-radius: 50%;
+    border: 1x solid red; */
+    padding: 45px;
+    
+  }
+  span i:first-child{
+      color: #E9ECEF;
+  }
+  .fa-2x{
+      float:right;
+      padding: 5px 5px;
+  }

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block titre %}SenVoyage {% endblock %}
+{% block content %}
+    
+    <div class="container-fluid jf">
+        <div class="jumbotron">
+            <div class="container text-center mt-4 mb-4">
+                <h1 class="display-2">SenVoyage</h1>
+                <p class="lead text-muted">Faire le tour du monde est un reve pour moi </p>
+                <p class="lead text-muted">Je vais vous montrer mes destinations à travers SenVoyage</p>
+                <a class="btn btn-primary btn-lg jumbo"  href="{% url 'blog' %}" type="button">voir plus</a>
+            </div>
+          </div>
+    </div>
+    <div class="container my-4">
+        <div class="row text-center">
+            <div class="col-lg-6 mb-2">
+                <img width="100%"  src="{% static 'images/voyage.jpg' %}" alt="art">
+                
+                <!-- <img width="100%"  src="media/voyage.jpg" alt="art"> ceci est aussi valable -->
+                <!-- <img class="w-100" src="{% get_media_prefix %}voyage.jpg" alt=""> -->
+            </div>
+            <div class=" col-lg-6 text-justify">
+                <h3>L'aventure</h3>
+                <hr >
+                <p class="lead">1. « L'instant le plus heureux d'une vie humaine est le départ vers une terre inconnue.» </p>
+                <!-- <p class="lead">2. «Se réveiller seul dans une ville étrangère est l'une des sensations les plus agréables au monde » </p> -->
+                <p class="lead">2. « Une vision large, saine et charitable des hommes et des choses ne peut pas être acquise en végétant dans un petit coin de la terre toute sa vie. » - Citation de Mark Twain</p>
+                <!-- <p class="lead">4. « L'homme ne peut découvrir de nouveaux océans tant qu'il n'a pas le courage de perdre de vue la côte. » - Citation d'André Gide</p>  -->
+                <p class="lead">3. « L'utilisation du voyage est de réguler l'imagination avec la réalité, et au lieu de penser à comment les choses peuvent être, les voir telles qu'elles sont. » - Samuel Johnson</p> 
+                <p class="lead">4. « Le monde est un livre, et ceux qui ne voyagent pas ne lisent qu'une seule page. » - Citation de Saint Augustine</p> 
+            </div>
+        </div>
+       
+        <hr>
+        
+        <div class="container mb-2">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                    <span class="fa-stack fa-7x">
+                    <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                    <i class="fas fa-hiking fa-stack-1x "></i>
+                  </span>
+                  <h2 class="display-6 mt-5">Voyage</h2>
+                  <p class="lead">Voyager c'est apprendre.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                    <span class="fa-stack fa-7x">
+                        <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fas fa-plane-departure fa-stack-1x "></i>
+                      </span><br> 
+                    
+                    <h2 class="display-6 mt-5">Vol</h2>
+                    <p class="lead">C'est beau de partir la nuit. On tire sur la manette des gaz, face au Sud, et dix secondes plus tard on renverse le paysage face au Nord.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 text-center">
+                    <span class="fa-stack fa-7x">
+                        <i class="fas fa-circle fa-stack-2x fa-inverse"></i>
+                        <i class="fas fa-route fa-stack-1x "></i>
+                      </span>
+                      <h2 class="display-6 mt-5">Découverte</h2>
+                    <p class="lead">Les plus belles découvertes cesseraient de me plaire si je devais les garder pour moi.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+{% endblock %}

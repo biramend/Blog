@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block titre %}Contact {% endblock %}
+{% block content %}
+    <h1 style="text-align: center;">Contactez-nous</h1>
+    <div class="container">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="mt-4 ">
+                <label for="prenom" class="form-label">Prénom</label>
+                {{ form.prenom }}
+              </div>
+              <div class=" mt-4">
+                <label for="nom" class="form-label">Nom</label>
+                {{ form.nom }}
+              </div>
+              <div class=" mt-4">
+                <label for="email" class="form-label">Email</label>
+                {{ form.email }}
+              </div>
+              <div class=" mt-4 mb-2">
+                <label for="message" class="form-label">Message</label>
+                {{ form.message }}
+              </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+    
+{% endblock %}
